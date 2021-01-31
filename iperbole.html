@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Math Solver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./main.css" />
+		<noscript><link rel="stylesheet" href="./noscript.css" /></noscript>
+		<script src="./equation-grapher iperbole.js"></script>
+		<link rel="shortcut icon" href="https://hscompany.netlify.com/logo_(1).png" type="image/x-icon">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Math Solver</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="https://hscompany.netlify.com"><img width="120px" src="https://hscompany.netlify.com/logo_(1).png"></a></li>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./retta.html">Retta</a></li>
+							<li><a href="./parabola.html">Parabola</a></li>
+							<li><a href="./circonferenza.html">Circonferenza</a></li>
+							<li><a href="./circonferenza.html">Ellisse</a></li>
+						</ul>
+					
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Iperbole Solver</h1>
+							</header>
+							<div class="content">
+								<div id="list" style="display: table; width: 105%;">
+                    
+					
+
+									<div class="inArow" style="display: table-cell;">
+										<h4 style="margin-right: 1px; "> x&#178/</h4>
+									</div>
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 90%;" type="text" placeholder="a&#178" id="a²">
+									</div>
+									
+									<div class="inArow" style="display: table-cell;">
+										<h4 style="margin-right: 1px; ">-</h4>
+									</div>
+				
+				
+									<div style="display: table-cell;">
+										<h4 style=" margin-right: 1px;">  y&#178/ </h4>
+									</div>
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 100%;" type="text" placeholder="b&#178" id="b²">
+									</div>
+				
+									<div style="display: table-cell;">
+										<h4 style=" margin-right: 1px;">  + </h4>
+									</div>
+				
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 100%;" type="text" placeholder="a" id="a">
+									</div>
+									
+									<div style="display: table-cell;">
+										<h4 style=" margin-right: 1px;">  x+</h4>
+									</div>
+				
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 100%;" type="text" placeholder="b" id="b">
+									</div>
+									
+									<div style="display: table-cell;">
+										<h4 style=" margin-right: 1px;">  y+</h4>
+									</div>
+				
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 120%;" type="text" placeholder="c" id="c">
+									</div>
+									<div style="display: table-cell;">
+										<h4 style="margin-right: 0px;">&nbsp    </h4>
+									</div>
+									<div style="display: table-cell;">
+										<h4 style="margin-right: 0px;">&nbsp    </h4>
+									</div>
+									<div style="display: table-cell;">
+										<h4 style=" margin-right: 0px;">   =0</h4>
+									</div>
+				
+								
+				
+								</div>	
+				
+								<ul class="actions">
+									<li><a href="#one" onclick="helloWorld();" class="button next scrolly">Get Solution</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="./pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Intersezione Asse X</a></h3>
+										<div class="content">
+											<h5 id="intAsseX"></h5>
+											<h5 id="intAsseXnumber"></h5>
+											<br>
+											<h5 id="intAsseY"></h5>
+											<h5 id="intAsseYnumber"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Asintoti</a></h3>
+										<div class="content">
+											<h5 id="intAsseX0"></h5>
+											<h5 id="intAsseXnumber0"></h5>
+											<br>
+											<h5 id="intAsseY0"></h5>
+											<h5 id="intAsseYnumber0"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Coordinate fuoco Y</a></h3>
+										<div class="content">
+											<h5 id="fuocoX"></h5>
+											<h5 id="fuocoXnumber"></h5>
+										  
+											<h5 id="fuocoY"></h5>
+											<h5 id="fuocoYnumber"></h5>
+										
+											
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a >Coordinate fuoco X</a></h3>
+										<div class="content">
+											<h5 id="fuocoX0"></h5>
+											<h5 id="fuocoXnumber0"></h5>
+										  
+											<h5 id="fuocoY0"></h5>
+											<h5 id="fuocoYnumber0"></h5>
+											
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic05.jpg" alt="" />
+									</span>
+									<header class="major"><h3><a>Eccentricità</a></h3>
+										<div class="content">
+											<h5 id="eccX"></h5>
+											<h5 id="eccXnumber"></h5>
+										  
+											<h5 id="eccY"></h5>
+											<h5 id="eccYnumber"></h5>
+										
+										</div>
+									</header>
+								</article>
+								
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Grafico</h2>
+									</header>
+									<script type="text/javascript">equationgraphMain();</script>
+								</div>
+							</section>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; Math Solver</li><li>Made by: <a>HARSIMRAN SINGH</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+		
+			
+	<script>
+
+		
+
+		function helloWorld() {
+            
+            var p = document.getElementById("a").value;
+            var d = document.getElementById("b").value;
+            var c = document.getElementById("c").value;
+            var a2 = document.getElementById("a²").value;
+            var b2 = document.getElementById("b²").value;
+			
+
+			
+            intAsseX.innerHTML = "Una intersezione dell'asse X è:";
+            intAsseXnumber.innerHTML = Math.sqrt(a2) ;
+            intAsseY.innerHTML = "La seconda intersezione dell'asse X è:"; 
+            intAsseYnumber.innerHTML = -(Math.sqrt(a2))  ;
+            
+            // intAsseX0.innerHTML = "y=";
+            intAsseXnumber0.innerHTML = "y = " + (Math.sqrt(b2))/(Math.sqrt(a2)) + "x"  ;
+            // intAsseY0.innerHTML = "La seconda intersezione dell'asse Y è:"; 
+            intAsseYnumber0.innerHTML = "y = " + -(Math.sqrt(b2))/(Math.sqrt(a2)) + "x"  ;
+
+			
+			
+		
+			fuocoX.innerHTML = "Se i fuochi sono sull'asse Y, allora Xf è: " + 0;
+			fuocoXnumber.innerHTML = "Se i fuochi sono sull'asse Y, allora Yf è: " + (-(Math.sqrt((b2*b2)+(a2*a2))));
+			fuocoY.innerHTML = "Se i fuochi sono sull'asse Y, allora Xf2 è: " + 0 ;
+			fuocoYnumber.innerHTML = "Se i fuochi sono sull'asse Y, allora Yf2 è: " + (Math.sqrt((b2*b2)+(a2*a2))) ;
+			fuocoX0.innerHTML = "Se i fuochi sono sull'asse X, allora Xf è: " + (-(Math.sqrt((a2*a2)+(b2*b2))));
+			fuocoXnumber0.innerHTML = "Se i fuochi sono sull'asse X, allora Yf è: " + 0;
+			fuocoY0.innerHTML = "Se i fuochi sono sull'asse X, allora Xf2 è: " + (Math.sqrt((a2*a2)+(b2*b2))) ;
+			fuocoYnumber0.innerHTML = "Se i fuochi sono sull'asse X, allora Yf2 è: " + 0  ;
+			
+
+			if ((a2*a2)+(b2*b2)>0) {
+				eccX.innerHTML = "L'eccentricità è: ";
+				eccXnumber.innerHTML = (Math.sqrt((a2*a2)+(b2*b2))) / a2;
+			} else {
+				eccY.innerHTML = "L'eccentricità è: ";
+				eccYnumber.innerHTML = (Math.sqrt((b2*b2)+(a2*a2))) / a2;
+			}
+			
+		    
+            
+            interX.innerHTML = "Le intersezioni con l'asse x sono:";
+            interXnumber.innerHTML = (-a + Math.sqrt(Math.pow(a, 2) - 4 * 1 * c)) / (2 * 1);
+            interXnumber1.innerHTML = (-a - Math.sqrt(Math.pow(a, 2) - 4 * 1 * c)) / (2 * 1);
+
+            interY.innerHTML = "Le intersezioni con l'asse y sono:";
+            interYnumber.innerHTML = (-b + Math.sqrt(Math.pow(b, 2) - 4 * 1 * c)) / (2 * 1);
+            interYnumber1.innerHTML = (-b - Math.sqrt(Math.pow(b, 2) - 4 * 1 * c)) / (2 * 1);
+			
+			
+
+		}
+	</script>
+		<!-- Scripts -->
+		<script src="./jquery.min.js"></script>
+		<script src="./jquery.scrolly.min.js"></script>
+		<script src="./jquery.scrollex.min.js"></script>
+		<script src="./browser.min.js"></script>
+		<script src="./breakpoints.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./main.js"></script>
+
+	</body>
+</html>
