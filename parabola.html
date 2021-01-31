@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Math Solver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./main.css" />
+		<noscript><link rel="stylesheet" href="./noscript.css" /></noscript>
+		<script src="./equation-graph.js"></script>
+		<link rel="shortcut icon" href="https://hscompany.netlify.com/logo_(1).png" type="image/x-icon">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Math Solver</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="https://hscompany.netlify.com"><img width="120px" src="https://hscompany.netlify.com/logo_(1).png"></a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="./retta.html">Retta</a></li>
+							<li><a href="./ellisse.html">Ellisse</a></li>
+							<li><a href="./circonferenza.html">Circonferenza</a></li>
+						</ul>
+					
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Parabola Solver</h1>
+							</header>
+							<div class="content">
+								
+				<div id="list" style="display: table;">
+					<div class="inArow" style="display: table-cell;  height: 52px;">
+						<input style="width: 100%;" type="text" placeholder="y" id="firstvalue">
+					</div>
+
+					<div class="inArow" style="display: table-cell;">
+						<h4 style="margin-right: 1px;">y=</h4>
+					</div>
+
+
+					<div class="inArow" style="display: table-cell; height: 52px;">
+						<input style="width: 100%;" type="text" placeholder="a" id="secondvalue">
+					</div>
+
+					<div style="display: table-cell;">
+						<h4 style=" margin-right: 1px;"> x&#178+ </h4>
+					</div>
+
+					<div class="inArow" style="display: table-cell; height: 52px;">
+						<input style="width: 100%;" type="text" placeholder="b" id="thirdvalue">
+					</div>
+
+
+					<div style="display: table-cell;">
+						<h4 style=" margin-right: 1px;">x+ </h4>
+					</div>
+
+					<div class="inArow" style="display: table-cell; height: 52px;">
+						<input style="width: 140%;" type="text" placeholder="c" id="fourthvalue">
+					</div>
+
+				</div>
+								<ul class="actions">
+									<li><a href="#one" onclick="getInputValue();" class="button next scrolly">Get Solution</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="./pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Intersezione Asse X</a></h3>
+										<div class="content">
+											<h5 id="Solution1"></h5>
+											<h5 id="Solution1number"></h5>
+											<br>
+											<h5 id="Solution2"></h5>
+											<h5 id="Solution2number"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Intersezione Asse Y</a></h3>
+										<div class="content">
+											<h5 id="Solution10"></h5>
+											<h5 id="Solution10number"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a >Coordinate del vertice</a></h3>
+										<div class="content">
+											<h5 id="Solution11"></h5>
+											<h5 id="Solution11number"></h5>
+											<br>
+											<h5 id="Solution22"></h5>
+											<h5 id="Solution22number"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a >Coordinate del fuoco</a></h3>
+										<div class="content">
+											<h5 id="Solution110"></h5>
+											<h5 id="Solution110number"></h5>
+											<br>
+											<h5 id="Solution220"></h5>
+											<h5 id="Solution220number"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic05.jpg" alt="" />
+									</span>
+									<header class="major"><h3><a>Equazione della Direttrice</a></h3>
+										<div class="content">
+											<h5 id="Solution1100"></h5>
+											<h5 id="Solution1100number"></h5>
+											<br>
+											<h5 id="Solution2200"></h5>
+											<h5 id="Solution2200number"></h5>
+										</div>
+									</header>
+								</article>
+								
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Grafico</h2>
+									</header>
+									<script type="text/javascript">equationgraphMain();</script>
+								</div>
+							</section>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; Math Solver</li><li>Made by: <a>HARSIMRAN SINGH</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+			<script>
+
+				function show(divId) {
+					$("#" + divId).show();
+				}
+		
+				function positive(a, b, c) {
+					return (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a)
+				}
+		
+				function negative(a, b, c) {
+					return (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a)
+				}
+		
+				function getInputValue() {
+					var y = document.getElementById("firstvalue").value;
+					var a = document.getElementById("secondvalue").value;
+					var b = document.getElementById("thirdvalue").value;
+					var c = document.getElementById("fourthvalue").value;
+		
+					x1 = positive(a, b, c);
+					x2 = negative(a, b, c);
+					console.log(x1, x2);
+					console.log("One solution is:", x1, ";", "The other solution is:", x2, ";")
+					Solution1.innerHTML = "La prima intersezione è:"; Solution1number.innerHTML = x1;
+					Solution2.innerHTML = "La seconda intersezione:"; Solution2number.innerHTML = x2;
+					Solution10.innerHTML = "L'intersezione è:"; Solution10number.innerHTML = c / y;
+					Solution11.innerHTML = "La coordinata x è:"; Solution11number.innerHTML = -b / (2 * a);
+					Solution22.innerHTML = "La coordinata y è:"; Solution22number.innerHTML = -(Math.pow(b, 2) - 4 * a * c) / (4 * a);
+					Solution110.innerHTML = "La coordinata x è:"; Solution110number.innerHTML = -b / (2 * a);
+					Solution220.innerHTML = "La coordinata y è:"; Solution220number.innerHTML = (1 - (Math.pow(b, 2) - 4 * a * c)) / (4 * a);
+					Solution1100.innerHTML = "L'equazione della direttrice è:"; Solution1100number.innerHTML = -(1 + (Math.pow(b, 2) - 4 * a * c)) / (4 * a);
+		
+					show('intersectionx');
+					show('intersectiony');
+					show('vertice');
+					show('fuoco');
+					show('direttrice');
+		
+				}
+			</script>
+		
+		<!-- Scripts -->
+		<script src="./jquery.min.js"></script>
+		<script src="./jquery.scrolly.min.js"></script>
+		<script src="./jquery.scrollex.min.js"></script>
+		<script src="./browser.min.js"></script>
+		<script src="./breakpoints.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./main.js"></script>
+
+	</body>
+</html>

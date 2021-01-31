@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Math Solver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./main.css" />
+		<noscript><link rel="stylesheet" href="./noscript.css" /></noscript>
+		<script src="./equation-graph retta.js"></script>
+		<link rel="shortcut icon" href="https://hscompany.netlify.com/logo_(1).png" type="image/x-icon">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Math Solver</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="https://hscompany.netlify.com"><img width="120px" src="https://hscompany.netlify.com/logo_(1).png"></a></li>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./ellisse.html">Ellisse</a></li>
+							<li><a href="./parabola.html">Parabola</a></li>
+							<li><a href="./circonferenza.html">Circonferenza</a></li>
+						</ul>
+					
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Retta Solver</h1>
+							</header>
+							<div class="content">
+								<h5 style="padding-right: 330px; ">PER_INTERSEZIONE_ASSI, PER_DISTANZA_PUNTO_RETTA</h5>
+					
+					
+								<div id="list" style="display: table;">
+                    
+									<div class="inArow" style="display: table-cell;  height: 52px;">
+										<input style="width: 100%;" type="text" placeholder="y" id="y0">
+									</div>
+				
+									<div class="inArow" style="display: table-cell;">
+										<h4 style="margin-right: 1px;">y=</h4>
+									</div>
+				
+				
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 100%;" type="text" placeholder="m" id="m0">
+									</div>
+				
+									<div style="display: table-cell;">
+										<h4 style=" margin-right: 1px;"> x+ </h4>
+									</div>
+				
+									<div class="inArow" style="display: table-cell; height: 52px;">
+										<input style="width: 100%;" type="text" placeholder="q" id="q0">
+									</div>
+				
+								
+				
+								</div>
+								<h5 style="padding-right: 330px; ">PER_DISTANZA_TRA_2_PUNTI, PER_PUNTO_MEDIO_TRA_2_PUNTI,
+									PER_RETTA_TRA_2_PUNTI, SOLO_X1,X2_PER_DISTANZA_PUNTO_RETTA</h5>
+									
+									<div id="list" style="display: table;">
+                    
+										<div class="inArow" style="display: table-cell;">
+											<h4 style="margin-right: 1px;">x1=</h4>
+										</div>
+										
+										<div class="inArow" style="display: table-cell;  height: 52px;">
+											<input style="width: 100%;" type="text" placeholder="x1" id="x10">
+										</div>
+					
+										<div style="display: table-cell;">
+											<h4 style=" margin-right: 1px;">  y1=</h4>
+										</div>
+					
+										<div class="inArow" style="display: table-cell; height: 52px;">
+											<input style="width: 100%;" type="text" placeholder="y1" id="y10">
+										</div>
+										
+									</div>
+									<div id="list" style="display: table;">
+										
+										<div class="inArow" style="display: table-cell;">
+											<h4 style="margin-right: 1px;">x2=</h4>
+										</div>
+										
+										<div class="inArow" style="display: table-cell;  height: 52px;">
+											<input style="width: 100%;" type="text" placeholder="x2" id="x20">
+										</div>
+					
+										<div style="display: table-cell;">
+											<h4 style="margin-right: 1px;">  y2=</h4>
+										</div>
+					
+										<div class="inArow" style="display: table-cell; height: 52px;">
+											<input style="width: 100%;" type="text" placeholder="y2" id="y20">
+										</div>
+										
+									</div>
+						   
+
+
+								<ul class="actions">
+									<li><a href="#one" onclick="helloWorld();" class="button next scrolly">Get Solution</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="./pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a >Intersezione Assi</a></h3>
+										<div class="content">
+											<h5 id="intAsseX"></h5>
+											<h5 id="intAsseXnumber"></h5>
+											<br>
+											<h5 id="intAsseY"></h5>
+											<h5 id="intAsseYnumber"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a >Retta tra 2 punti</a></h3>
+										<div style="display: table;" class="content" >
+											<h5 style="display: table-cell;" id="Solution10"></h3>
+											<div>
+											<h5 style="display: table-cell;" id="initial"></h5>
+											<h5 style="display: table-cell;" id="numberM"></h5>
+											<h5 style="display: table-cell;" id="initial2"></h5>
+											<h5 style="display: table-cell;" id="numberQ"></h5>
+											
+											</div>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Distanza tra 2 punti</a></h3>
+										<div class="content">
+											<h5 id="Solution11"></h5>
+											<div>
+											<h5 id="distanza2punti"></h5>			
+											</div>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a>Punto medio dati 2 punti</a></h3>
+										<div class="content">
+											<h5 id="coordinataXPM"></h5>
+											<h5 id="coordinataXPMnumber"></h5>
+											<h5 id="coordinataYPM"></h5>
+											<h5 id="coordinataYPMnumber"></h5>
+										</div>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="./pic05.jpg" alt="" />
+									</span>
+									<header class="major"><h3><a>Distanza punto-retta</a></h3>
+										<div class="content">
+											<h5 id="distanzaPuntoRetta"></h5>
+											<h5 id="distanzaPuntoRettaNumber"></h5>
+										</div>
+									</header>
+								</article>
+								
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Grafico</h2>
+									</header>
+									<script type="text/javascript">equationgraphMain();</script>
+								</div>
+							</section>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; Math Solver</li><li>Made by: <a>HARSIMRAN SINGH</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+			<script>
+
+				function show(divId) {
+					$("#" + divId).show();
+				}
+		
+				function retta2punti(y0, x0, y1, y2, x1, x2) {
+					return ((y2-y1)/(x2-x1))/(x0-x1)+y1
+					
+				}
+		
+				function positive(a, b, c) {
+					return (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a)
+				}
+		
+				function negative(a, b, c) {
+					return (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a)
+				}
+		
+				function helloWorld() {
+					var y = document.getElementById("y0").value;
+					var m = document.getElementById("m0").value;
+					var q = document.getElementById("q0").value;
+					var z1 = document.getElementById("x10").value;
+					var z2 = document.getElementById("x20").value;
+					var y1 = document.getElementById("y10").value;
+					var y2 = document.getElementById("y20").value;
+					var y0 = "y";
+					var x0 = "z";
+		
+					
+					intAsseX.innerHTML = "L'intersezione con l'asse X è:"; intAsseXnumber.innerHTML = -(q) / (m);
+					intAsseY.innerHTML = "L'intersezione con l'asse Y è:"; intAsseYnumber.innerHTML = (q) / (y);
+					Solution10.innerHTML = "La retta è:"; 
+					initial.innerHTML = "y=";
+					numberM.innerHTML = (y2-y1)/(z2-z1);
+					initial2.innerHTML = "x +";
+					numberQ.innerHTML = (numberM.innerHTML*(-z1)+((y1)*(y1)));
+					
+					Solution11.innerHTML = "La distanza tra i 2 punti è:"; 
+					distanza2punti.innerHTML = Math.sqrt((z2-z1)*(z2-z1)+(y2-y1)*(y2-y1));
+					
+					coordinataXPM.innerHTML = "La coordinata x del punto medio è:";
+					coordinataXPMnumber.innerHTML = (z1+z2)/2;
+					coordinataYPM.innerHTML = "La coordinata y del punto medio è:";
+					coordinataYPMnumber.innerHTML = (y1+y2)/2;
+		
+					distanzaPuntoRetta.innerHTML = "La distanza punto-retta è:"
+					distanzaPuntoRettaNumber.innerHTML = (y1-(m*z1+q))/(Math.sqrt(1+ (m*m)));
+			 
+		
+					
+					
+		
+					show('intersectionx');
+					show('intersectiony');
+					show('vertice');
+					show('fuoco');
+					show('direttrice');
+		
+				}
+			</script>
+		
+		
+		<!-- Scripts -->
+		<script src="./jquery.min.js"></script>
+		<script src="./jquery.scrolly.min.js"></script>
+		<script src="./jquery.scrollex.min.js"></script>
+		<script src="./browser.min.js"></script>
+		<script src="./breakpoints.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./main.js"></script>
+
+	</body>
+</html>
